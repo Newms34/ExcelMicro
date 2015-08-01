@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Squawker (totally not twitter)</title>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/stylesheets/style.css" rel="stylesheet" />
+</head>
+
+<body ng-app='excel' ng-controller='MainController' id='forMouse'>
+    <div class='col-md-offset-1 col-md-3'>
+        <div class='box' id='person'>
+            <div id='personPic'>
+                <img src='http://lorempixel.com/100/100/people' />
+                <div id='personTitle'>Excel Cabbage
+                    <div id='personAdr'>@acabbage</div>
+                </div>
+            </div>
+            <br/>
+            <div id='tweetInfo'>
+                <div class='col-md-4 down'>TWEETS
+                    <div class='num'>{{numTweets}}</div>
+                </div>
+                <div class='col-md-4 down'>FOLLOWING
+                    <div class='num'>{{following}}</div>
+                </div>
+                <div class='col-md-4 down'>FOLLOWERS
+                    <div class='num'>{{followers}}</div>
+                </div>
+            </div>
+        </div>
+        <div class='box' id='trends'><span id='trendTit'>Trends</span><a href='#' onclick='alert("No functionality yet!")'>Change</a>
+            <br/>
+            <div class='trendTweet' ng-repeat='tweet in trendTweets'>
+                <div class='tit'>{{tweet.title}}</div>
+                {{tweet.text}}
+                <br/>
+                <div class='numTrends'>{{tweet.num}} Tweets about this trend</div>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-6'>
+        <div id='mainEvent'>
+            <div id='whatHappen'><img src='http://lorempixel.com/50/50/people'/><input type='text' value = "What's Happening?" ng-submit='addTo(this.value);'>&#128247;</div>
+            <div class='mainTweet' ng-repeat='mt in mainTweets'>  
+                <img class='mainImg' src = 'http://lorempixel.com/50/50{{mt.pic}}'/>
+                {{mt.title}} {{mt.time}}  
+                {{mt.text}}
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src='/angular/angular.js'></script>
+    <script src='/js/controllers/MainController.js'></script>
+    <script src='/js/factories/fac1.js'></script>
+</body>
+
+</html>

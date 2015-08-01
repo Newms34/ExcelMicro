@@ -1,0 +1,31 @@
+{
+  "name": "atomDraw",
+  "version": "1.0.0",
+  "description": "Draw atomic structures using divs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "chemistry",
+    "atoms",
+    "science",
+    "physics",
+    "molecules",
+    "css"
+  ],
+  "author": "David Newman",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.3.15",
+    "body-parser": "^1.12.0",
+    "bower": "^1.3.12",
+    "debug": "^2.1.1",
+    "express": "^4.12.0",
+    "fs": "0.0.2",
+    "mongoose": "^3.8.23",
+    "morgan": "^1.5.1",
+    "nodemon": "^1.3.7",
+    "socket.io": "^1.3.4"
+  }
+}

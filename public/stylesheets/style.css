@@ -1,0 +1,111 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #333;
+    font-family: 'arial', sans-serif;
+}
+
+.box {
+    width: 98%;
+    background-color: #fff;
+    border-radius: 2.5%;
+    margin: 10px;
+}
+
+#person {
+    background: linear-gradient(to bottom, #3D90FF 0%, #3D90FF 50%, #000000 50%, white 50%, white 100%);
+    height: 27vh;
+}
+
+#trends {
+    padding: 10px;
+}
+
+#personTitle {
+    position: relative;
+    top: 35px;
+    display: inline-block;
+    font-size: 16pt;
+}
+
+#personPic {
+    float: left;
+    position: relative;
+    top: 60px;
+    left: 10%;
+}
+
+#personPic img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
+    border-radius: 4%;
+    margin-right: 10px;
+}
+
+#personAdr {
+    position: relative;
+    font-size: 10pt;
+    color: #aaa;
+}
+
+.down {
+    position: relative;
+    top: 8.5vh;
+    color: #bbb;
+    font-size: 9pt;
+}
+
+.down .num {
+    font-size: 14pt;
+    color: #3D90FF;
+}
+
+#trendTit {
+    font-size: 14pt;
+    color: #aaa;
+    padding-right: 20px;
+}
+
+/*styles for the trending tweets themselves*/
+.trendTweet {
+    margin:10px;
+}
+.trendTweet .tit{
+    color:#3D90FF;
+}
+.trendTweet .numTrends{
+    font-size: 10pt;
+    color:#aaa;
+}
+#mainEvent{
+    margin:10px;
+    width:90%;
+
+    background-color: #fff;
+    color:#000;
+    border-radius:1.5%;
+    overflow:hidden;
+}
+#whatHappen{
+    width:100%;
+    height:70px;
+    text-align: center;
+    background-color: #fafafa;
+}
+#whatHappen input{
+    width:80%;
+    
+    color:#3D90FF;
+}
+#whatHappen img{
+    border-radius:3%;
+    margin-top:10px;
+    margin-right:10px;
+}
+.mainTweet{
+    height:500px;
+    border-bottom:1px solid #ccc;
+}
